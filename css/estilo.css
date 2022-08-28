@@ -1,0 +1,87 @@
+html{
+	min-height: 100%;
+	position: relative;
+	font-size: 10px;
+    background-color:honeydew;
+}
+/*Index*/
+nav ul li{
+	float: left;
+	margin-top: 20px;
+	font-size: 20px;
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	padding: 20px;
+	margin: 20px;
+}
+
+
+.login{
+	text-align: center;
+	background-color:lightgoldenrodyellow;
+	margin-left:40%;
+	margin-top: 2%;
+	width: 300px;
+	height: 300px;
+	position: relative;
+	
+}
+
+body{
+	margin: 0;
+	font-family: sans-serif;
+	position: relative;
+	min-height: 100vh;
+}
+
+footer{
+	text-align: center;
+	bottom: 0;
+	position: relative;
+}
+
+.gridGeneral{
+	display: grid;
+	grid-template-columns: 100%; /*propiedad que nos permite con sus valores, modificar el ancho de cada columna que querramos */
+	grid-template-rows: 20% 65% 15%; /*propiedad que nos permite con sus valores, modificar el alto de cada fila que querramos*/ 
+}
+
+/*Modo movile*/
+@media only screen and (max-width: 768px){
+	header,footer img{width: 50px;height: 50px;}
+	a{padding: 0px;margin: 0px;}
+	nav ul li{
+		align-items: center;
+		margin-top: 15px;
+		font-size: 15px;
+		list-style: none;
+	}
+	.gridGeneral{
+		display: grid;
+		grid-template-columns: 100%; /*propiedad que nos permite con sus valores, modificar el ancho de cada columna que querramos */
+		grid-template-rows: 25% 55% 15%; /*propiedad que nos permite con sus valores, modificar el alto de cada fila que querramos*/ 
+	}
+	.login {
+		text-align: center;
+		background-color: lightgoldenrodyellow;
+		margin-left: 0%;
+		margin-top: 2%;
+		width: 100%;
+		position: relative;
+	}
+}
+
+
+/*Fin mododo movile*/
+
+
+/*fin index*/
+
+
+/*Nuevo usuario*/
+.formNuevoUsuario{
+	text-align: center;
+}
